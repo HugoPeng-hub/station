@@ -1,0 +1,2 @@
+import React from 'react';
+import Panel from './Panel';export default function SpeechFeedback({speech}){return <Panel number="06" title="SPEECH FEEDBACK" tag="WHAT"><div className="speech-live"><span className="speaker">◖))</span><div className="wave">{Array.from({length:35},(_,i)=><i key={i} style={{height:8+(Math.sin(i*1.9)+1)*11}}/>)}</div><small>VOICE OUTPUT</small></div><div className="speech-lines">{speech.slice(-3).reverse().map((s,i)=><div key={s.id} className={i===0?'latest':''}><time>{s.time}</time><p>“{s.text}”</p></div>)}</div></Panel>}

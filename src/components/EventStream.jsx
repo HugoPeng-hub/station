@@ -1,0 +1,2 @@
+import React from 'react';
+export default function EventStream({events}){return <section className="event-stream"><div className="event-title"><h2><span className="index">08</span>SYSTEM EVENT STREAM</h2><span className="micro"><i/> LOCAL SESSION</span></div><div className="events">{events.slice(-4).map(([time,name,detail],i)=><div key={i}><time>{time}</time><b>{name}</b><span>{detail}</span></div>)}</div><div className="event-count">{String(events.length).padStart(3,'0')}<small>EVENTS</small></div></section>}

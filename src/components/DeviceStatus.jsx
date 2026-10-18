@@ -1,0 +1,3 @@
+import React from 'react';
+import Panel from './Panel';
+export default function DeviceStatus(){return <Panel number="01" title="DEVICE CONNECTION" tag="USB / LOCAL"><div className="device-body"><div className="controller"><div className="controller-strip"/><div className="controller-touch"><i/></div><div className="controller-dial"/><div className="controller-buttons">•••</div></div><div><div className="status"><i/> Connected</div><h3>EchoPath Controller <span>01</span></h3><p className="muted">Tactile semantic interface</p></div></div><div className="device-spec"><div><small>CONTROLLER</small><b>ESP32-S3</b></div><div><small>FIRMWARE</small><b>v0.8.2</b></div><div><small>LATENCY</small><b>12 <em>ms</em></b></div></div></Panel>}
